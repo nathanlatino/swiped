@@ -2,6 +2,7 @@
 
 namespace Tests\Unit;
 
+use App\Swipe;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -14,6 +15,7 @@ class ExampleTest extends TestCase
      */
     public function testBasicTest()
     {
-        $this->assertTrue(true);
+        $response = $this->call('get','/api/swipe');
+        print($response);
     }
 }
