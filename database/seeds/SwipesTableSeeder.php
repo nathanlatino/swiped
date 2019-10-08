@@ -15,10 +15,10 @@ class SwipesTableSeeder extends Seeder
 //        Swipe::truncate();
         $faker = \Faker\Factory::create();
 
-        for($i = 0; $i < 100; $i++) {
+        for($i = 0; $i < 1000; $i++) {
             Swipe::create([
                 'user_id' => $faker->numberBetween(2,10),
-                'distance' => $faker->numberBetween(2,10),
+                'distance' => $faker->numberBetween(2,2000),
             ]);
         }
     }
